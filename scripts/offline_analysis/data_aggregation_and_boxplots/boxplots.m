@@ -9,8 +9,8 @@ clear; close all; clc
 
 addpath '/mydir/scripts/auxiliaries';
 
-MAINPATH = '/mydir';
-PATHIN = [MAINPATH, '/analysis/data_aggregation_and_boxplots'];
+MAINPATH = '//mnt/525C77605C773E33/all my stuff/free robotic hand control/article/complete_project_folder';
+PATHIN = [MAINPATH, '/analysis/data_aggregation_and_boxplots/'];
 
 %% some variable allocation and data loading
 
@@ -236,20 +236,20 @@ legend off
 % training accuracies subplot
 subplot(2,1,1);
 
-ceC = myData(1:9,{'CRce'});
-ceC.Properties.VariableNames = {'CRce_contr'};
-ceS = myData(10:18,{'CRce'});
-ceS.Properties.VariableNames = {'CRce_stroke'};
+ceC = myData(1:9,{'TAce'});
+ceC.Properties.VariableNames = {'TAce_contr'};
+ceS = myData(10:18,{'TAce'});
+ceS.Properties.VariableNames = {'TAce_stroke'};
 
-efC = myData(1:9,{'CRef'});
-efC.Properties.VariableNames = {'CRef_contr'};
-efS = myData(10:18,{'CRef'});
-efS.Properties.VariableNames = {'CRef_stroke'};
+efC = myData(1:9,{'TAef'});
+efC.Properties.VariableNames = {'TAef_contr'};
+efS = myData(10:18,{'TAef'});
+efS.Properties.VariableNames = {'TAef_stroke'};
 
-ofC = myData(1:9,{'CRof'});
-ofC.Properties.VariableNames = {'CRof_contr'};
-ofS = myData(10:18,{'CRof'});
-ofS.Properties.VariableNames = {'CRof_stroke'};
+ofC = myData(1:9,{'TAof'});
+ofC.Properties.VariableNames = {'TAof_contr'};
+ofS = myData(10:18,{'TAof'});
+ofS.Properties.VariableNames = {'TAof_stroke'};
 
 y = [ofC{:,:} ofC{:,:} ceC{:,:} ceS{:,:} efC{:,:} efS{:,:}];
 group = [ones(1,9) ones(1,9)*2 ones(1,9)*3 ones(1,9)*4 ones(1,9)*5 ones(1,9)*6];

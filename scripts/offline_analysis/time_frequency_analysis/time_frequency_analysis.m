@@ -240,6 +240,8 @@ for y = 1:length(groups)                                                        
 
     savefig([PATHOUT 'ERDs_CSPbased_across_' groups{y} '_subjects.fig']);
     print([PATHOUT 'ERDs_CSPbased_across_' groups{y} '_subjects'], '-dtiff', '-r300');
+    
+    close all
 end 
 
 %% get CSP-based ERD values

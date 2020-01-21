@@ -21,7 +21,7 @@ SUBJ_contr = {'01', '02', '03', '04', '05', '06', '07', '08', '09'};            
 SUBJ_complete = {SUBJ_stroke; SUBJ_contr};
 
 % initializing paths
-cd '/mnt/525C77605C773E33/all my stuff/free robotic hand control/article/scripts for publication check/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
+cd '/mydir/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
 performanceAnalysis_init;
 
 % start eeglab

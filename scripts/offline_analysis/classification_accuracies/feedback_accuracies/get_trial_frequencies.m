@@ -6,6 +6,10 @@
 
 clear all; close all; clc;
 
+% initalize paths
+cd '/mydir/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
+performanceAnalysis_init;
+
 %% variables that distinguish between groups
 
 groups = {'stroke', 'contr'};                                                               
@@ -13,10 +17,6 @@ groups = {'stroke', 'contr'};
 SUBJ_stroke = {'01', '02', '03', '05', '06', '07', '08', '09', '10'};                       % subject numbers in stroke group
 SUBJ_contr = {'01', '02', '03', '04', '05', '06', '07', '08', '09'};                        % subject numbers in control group
 SUBJ_complete = {SUBJ_stroke; SUBJ_contr};
-
-% initalize paths
-cd '/mnt/525C77605C773E33/all my stuff/free robotic hand control/article/scripts for publication check/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
-performanceAnalysis_init;
 
 %% calculating number of trials for each class
 

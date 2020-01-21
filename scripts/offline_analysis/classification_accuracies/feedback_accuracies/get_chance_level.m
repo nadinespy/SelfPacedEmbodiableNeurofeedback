@@ -6,11 +6,11 @@
 
 clear all; close all; clc;
 
-%% loading files
-
 % initalize paths
-cd '/mnt/525C77605C773E33/all my stuff/free robotic hand control/article/scripts for publication check/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
+cd '/mydir/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
 performanceAnalysis_init;
+
+%% loading files
 
 SUBJ = {'Stroke01', 'Stroke02', 'Stroke03', 'Stroke05', 'Stroke06', 'Stroke07', 'Stroke08', 'Stroke09', 'Stroke10', 'Contr01', 'Contr02', 'Contr03', 'Contr04', 'Contr05', 'Contr06', 'Contr07', 'Contr08', 'Contr09'};                          
 

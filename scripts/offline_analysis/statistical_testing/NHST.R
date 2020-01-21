@@ -107,12 +107,12 @@ test_ef_of_bootstrap = bootstrap_t_distribution(t(t(myData$TAef)), t(t(myData$TA
 save(test_ef_of_bootstrap,file="test_ef_of_bootstrap.Rda")
 
 # effect sizes for training accuracies
-mean_of = mean(myData$CRof)
-var_of = var(myData$CRof)
-mean_ce = mean(myData$CRce)
-var_ce = var(myData$CRce)
-mean_ef = mean(myData$CRef)
-var_ef = var(myData$CRef)
+mean_of = mean(myData$TAof)
+var_of = var(myData$TAof)
+mean_ce = mean(myData$TAce)
+var_ce = var(myData$TAce)
+mean_ef = mean(myData$TAef)
+var_ef = var(myData$TAef)
 
 # difference "open vs. flexion classifier" - "extension vs. flexion classifier"
 d1 <- abs(mean_of-mean_ef) / sqrt(mean(var_of+var_ef))

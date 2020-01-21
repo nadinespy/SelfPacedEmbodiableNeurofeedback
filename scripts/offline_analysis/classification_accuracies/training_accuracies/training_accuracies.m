@@ -7,8 +7,8 @@
 
 clear all; close all; clc
 
-MAINPATH = 'mydir';
-PATHIN = [MAINPATH, '/analysis/classification_accuracies/training_accuracies/'];
+MAINPATH = '/mydir';
+PATHIN = [MAINPATH, '/analysis/online/'];
 PATHOUT = [MAINPATH, '/analysis/classification_accuracies/training_accuracies/'];
 
 %% variables that distinguish between groups

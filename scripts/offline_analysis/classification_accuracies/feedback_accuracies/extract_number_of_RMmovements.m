@@ -10,6 +10,10 @@
 
 clear all; close all; clc;
 
+% initializing paths
+cd '/mydir/scripts/offline_analysis/classification_accuracies/feedback_accuracies/';
+performanceAnalysis_init;
+
 %% allocating variables
 
 % distinguish between groups
@@ -18,10 +22,6 @@ groups = {'stroke', 'contr'};
 SUBJ_stroke = {'01', '02', '03', '05', '06', '07', '08', '09', '10'};                       % subject numbers in stroke group
 SUBJ_contr = {'01', '02', '03', '04', '05', '06', '07', '08', '09'};                        % subject numbers in control group
 SUBJ_complete = {SUBJ_stroke; SUBJ_contr};
-
-% initializing paths
-cd '/mnt/525C77605C773E33/all my stuff/free robotic hand control/article/scripts for publication check/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
-performanceAnalysis_init;
 
 % start eeglab
 eeglab;

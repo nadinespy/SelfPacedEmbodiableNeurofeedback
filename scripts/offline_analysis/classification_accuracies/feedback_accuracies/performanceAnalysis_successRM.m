@@ -9,11 +9,11 @@
 
 clear all; close all; clc;
 
-%% allocating variables
-
 % initalize paths
-cd '/mnt/525C77605C773E33/all my stuff/free robotic hand control/article/scripts for publication check/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
-performanceAnalysis_init; 
+cd '/mydir/scripts/offline_analysis/classification_accuracies/feedback_accuracies';
+performanceAnalysis_init;
+
+%% allocating variables
 
 N = 90;                                                                                     % standard length of matrices being created (so that they can be concatinated)
 
