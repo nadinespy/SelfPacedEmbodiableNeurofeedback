@@ -77,14 +77,11 @@ required packages/files:
 &nbsp;
 
 ### Classification accuracies
-&nbsp;
 
 #### Training accuracies
 
 * **training_accuracies.m** <br />
 script for extracting training accuracies of the training block
-&nbsp;
-
 &nbsp;
 
 #### Feedback accuracies
